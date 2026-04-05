@@ -214,7 +214,7 @@ void Rayan(film movies[]) {
     }
     printWrapper(rayan, k, "Фильмы с Райаном Гослингом"); 
 }
-void Expensive(film movies[]) { //самые дорогие фильмы 20-х годов
+void Expensive(film movies[]) { 
     film expensive[SIZE];
     int k = 0;
     for (int i = 0; i < SIZE; i++) {
@@ -234,7 +234,7 @@ void Expensive(film movies[]) { //самые дорогие фильмы 20-х �
     }
 
 
-    int count = (k < 4) ? k : 4; //если больше 4 выводим 4, если меньше выводим сколько есть
+    int count = (k < 4) ? k : 4; 
     printWrapper(expensive, count, "Самые дорогие фильмы 2020-х годов"); 
 }
 
