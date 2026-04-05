@@ -92,7 +92,7 @@ void printFilmByName(film movies[], int count) {
             break;
         }
     }
-    if (!found) { //если не найдено
+    if (!found) { 
         cout << "\nФильм \"" << searchName << "\" не найден!\n";
     }
 }
