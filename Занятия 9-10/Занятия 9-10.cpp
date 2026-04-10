@@ -1,7 +1,6 @@
 #include <iostream>
 #include <fstream>
 #include <string>
-#include <fstream>
 using namespace std;
 
 const int SIZE = 20;
