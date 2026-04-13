@@ -297,13 +297,13 @@ void binaryOutput(film movies[]) {
 	cout << "Бинарная запись завершена \n";
 }
 
-void binaryInput(film albums[]) {
+void binaryInput(film movies[]) {
 	fstream in("struct.txt", ios::binary | ios::in);
 	int i = 0;
 	if (in.is_open()) {
 		while (!in.eof())
 		{
-			in.read((char*)&albums[i], sizeof(albums[i]));
+			in.read((char*)&movies[i], sizeof(movies[i]));
 			i++;
 		}
 		in.close();
@@ -312,7 +312,7 @@ void binaryInput(film albums[]) {
 		cout << "Не найдено \n";
 	}
 
-	printWrapper(albums, SIZE, "Чтение из бинарной записи");
+	printWrapper(movies, SIZE, "Чтение из бинарной записи");
 }
 
 film* init() { 
